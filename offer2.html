@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome - The calculator app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+    <!-- FontAwesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Social buttons -->
+    <link href="css/social-buttons.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand">calculator</a>
+            <div class="nav-collapse"><!-- Other nav bar content -->
+                <ul class="nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="calcselect.php"><i class="icon-home"></i> Home</a></li>
+                        <li class="dropdown">
+                            <a href="calcselect.php" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-large"></i> My Calculators <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="calc.php">Car Payment Calculator</a></li>
+                                <li><a href="calc.php">Another Calculator</a></li>
+                                <li><a href="calc.php">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="offers.php"><i class="icon-usd"></i> My Offers</a></li>
+                    </ul>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.php"><i class="icon-off"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div><br /><br /><br />
+<div class="container">
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#pane1" data-toggle="tab">Quotes</a></li>
+            <li><a href="#pane2" data-toggle="tab">Pending</a></li>
+            <li><a href="#pane3" data-toggle="tab">Drafts</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="pane1" class="tab-pane active">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                Quote One - Passaic, Honda
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                                <p>2012 Acura TL</p>
+                                <p>Notes sent to seller</p>
+                                
+                                
+                <div class="thumbnail" style="padding: 0">
+                  <div style="padding:4px">
+                    <img alt="300x200" style="width: 100%" src="Acura.jpg">
+                  </div>
+                  <div class="caption">
+                    <h2>Offer A</h2>
+                    <p>Car description</p>
+                    <p><i class="icon icon-map-marker"></i> City, State</p>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+                
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                Quote Two - Lawrenceville, Acura
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <label class="control-label" for="inputStickerPrice">Sticker Price</label>
+                                <div class="controls">
+                                    <input type="text" id="inputStickerPrice" placeholder="22,000">
+                                </div>
+                                <label class="control-label" for="inputStickerPrice">Quote Price</label>
+                                <div class="controls">
+                                    <input type="text" id="inputStickerPrice" placeholder="19,000">
+                                </div>
+                                <input type="checkbox" name="vehicle" value="vehicle" checked="checked"> Sunroof<br>
+                                <input type="checkbox" name="vehicle" value="vehicle"> GPS<br>
+                                <input type="checkbox" name="vehicle" value="vehicle"> Chrome alloy Wheels<br>
+                            </div>
+                            <div class="buttonHolder">
+                                <button type="submit" class="btn btn-primary" >Show Notes</button>
+                                <button type="submit" class="btn btn-success" >Accept Quote</button>
+                            </div>
+                        </div>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    Quote Three - Lawrenceville, Toyota
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pane2" class="tab-pane">
+                <div class="thumbnail" style="padding: 0">
+                  <div style="padding:4px">
+                    <img alt="300x200" style="width: 100%" src="Acura.jpg">
+                  </div>
+                  <div class="caption">
+                    <h2>Offer A</h2>
+                    <p>Car description</p>
+                    <p><i class="icon icon-map-marker"></i> City, State</p>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row-fluid">
+                      <div class="span4"><b>$15,000</b><br/><small>Quote</small></div>
+                      <div class="span4"><b>6%</b><br/><small>Interest</small></div>
+                      <div class="span4"><b>48</b><br/><small>Months</small></div>
+                      <div class="span12" style='text-align:center'><h3>$352.28<small>/mo</small></h3></div>
+                    </div>
+                  </div>
+                  <div class="modal-footer" style="text-align: center">
+                    <div class="btn-group">
+                      <button class="btn btn-primary">Accept</button>
+                      <button class="btn btn-danger">Reject</button>
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+            <div id="pane3" class="tab-pane">
+                              <li class="span3">
+                <div class="thumbnail" style="padding: 0">
+                  <div style="padding:4px">
+                    <img alt="300x200" style="width: 100%" src="Acura.jpg">
+                  </div>
+                  <div class="caption">
+                    <h2>Offer A</h2>
+                    <p>Car description</p>
+                    <p><i class="icon icon-map-marker"></i> City, State</p>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row-fluid">
+                      <div class="span4"><b>$15,000</b><br/><small>Quote</small></div>
+                      <div class="span4"><b>6%</b><br/><small>Interest</small></div>
+                      <div class="span4"><b>48</b><br/><small>Months</small></div>
+                      <div class="span12" style='text-align:center'><h3>$352.28<small>/mo</small></h3></div>
+                    </div>
+                  </div>
+                  <div class="modal-footer" style="text-align: center">
+                    <div class="btn-group">
+                      <button class="btn btn-primary">Accept</button>
+                      <button class="btn btn-danger">Reject</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="span3">
+                <div class="thumbnail" style="padding: 0">
+                  <div style="padding:4px">
+                    <img alt="300x200" style="width: 100%" src="Toyota.jpg">
+                  </div>
+                  <div class="caption">
+                    <h2>Offer B</h2>
+                    <p>Car description</p>
+                    <p><i class="icon icon-map-marker"></i> City, State</p>
+                  </div>
+                  <div class="modal-footer" >
+                    <div class="row-fluid">
+                      <div class="span4"><b>$15,000</b><br/><small>Quote</small></div>
+                      <div class="span4"><b>6%</b><br/><small>Interest</small></div>
+                      <div class="span4"><b>48</b><br/><small>Months</small></div>
+                      <div class="span12" style='text-align:center'><h3>$352.28<small>/mo</small></h3></div>
+                    </div>
+                  </div>
+                  <div class="modal-footer" style="text-align: center">
+                    <div class="btn-group">
+                      <button class="btn btn-danger" disabled>Rejected</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="span3">
+                <div class="thumbnail" style="padding: 0">
+                  <div style="padding:4px">
+                    <img alt="300x200" style="width: 100%" src="Honda.jpg">
+                  </div>
+                  <div class="caption">
+                    <h2>Offer C</h2>
+                    <p>Car description</p>
+                    <p><i class="icon icon-map-marker"></i> City, State</p>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row-fluid">
+                      <div class="span4"><b>$15,000</b><br/><small>Quote</small></div>
+                      <div class="span4"><b>6%</b><br/><small>Interest</small></div>
+                      <div class="span4"><b>48</b><br/><small>Months</small></div>
+                      <div class="span12" style='text-align:center'><h3>$352.28<small>/mo</small></h3></div>
+                    </div>
+                  </div>
+                  <div class="modal-footer" style="text-align: center">
+                    <div class="btn-group">
+                      <button class="btn btn-primary" disabled>Accepted</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div><!--/row-->
+        </div><!--/span-->
+            </div>
+        </div><!-- /.tab-content -->
+    </div>
+</div>
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="span8">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+            </div>
+            <div class="span4">
+                <p class="muted pull-right">&copy; 2013 Calculator App. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
